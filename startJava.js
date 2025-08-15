@@ -1,1 +1,1 @@
-document.getElementById("demo").innerHTML = "Hello JavaScript"; 
+console.log("Starting Java application...");
