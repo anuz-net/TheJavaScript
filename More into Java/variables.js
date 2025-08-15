@@ -6,3 +6,6 @@ isAvailable=true;
 console.log(age);
 console.log(price);
 console.log(isAvailable);
+
+fullName=25;
+console.log(fullName);
