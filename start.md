@@ -16,6 +16,7 @@
 ## ✨ About This Repo
 
 This repository, **Java Script**, is my personal log of learning and practicing JavaScript. It contains notes, code snippets, mini‑projects, and challenges I’ve completed as I build my skills for web development.
+ReadmeUpadted
 
 ---
 
