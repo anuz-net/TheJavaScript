@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .board{
+            width: 400px;
+            height: 400px;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="board" id ="board"></div>
+    <script>
+        let board = document.getElementById("board");
+        for(let i =0;i<8;i++)
+    {
+        for(let j = 0;j<8;j++)
+    {
+        let box = document.createElement("div");
+
+        let sum = i+j;
+        if (sum % 2 === 0)
+        {
+            box.style.backgroundColor= white;
+        }
+        else
+        {
+            box.style.backgroundColor = black;
+        }
+    }
+    }
+    board.append(box);
+    </script>
+</body>
+</html>
