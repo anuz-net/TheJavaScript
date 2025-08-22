@@ -1,14 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .this{
+            height: 100px;
+            width: 100px;
+            background-color: antiquewhite;
+        }
+    </style>
 </head>
+
 <body>
-    <div id="divison">
+    <div id="divison" name = "rhss">
         This is a Divison
-    <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo dolorem ipsa fugiat amet perspiciatis harum pariatur officia quia nam voluptatibus?</p>        
+        <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo dolorem ipsa fugiat amet
+            perspiciatis harum pariatur officia quia nam voluptatibus?</p>
     </div>
+    <div class="this">
+        <p>This is a Paragraph</p>
+        <b>This is bigger than I thought !!!</b>
+    </div>
+
+    <script>
+        let divs = document.querySelector("div");
+
+        // get attribute 
+        let id = divs.getAttribute("id");
+        console.log(id);
+
+        let name = divs.getAttribute("name");
+        console.log(name);
+
+        let jara = document.querySelector("p");
+        console.log(jara.setAttribute('class', 'newpara'));
+        
+        //CSS Using JS
+        let changeStyle = document.querySelector(".this")
+        changeStyle.style.color="red";
+        changeStyle.style.margin ="20px 25px"
+        changeStyle.style.padding="20px 20px"
+        jara.style.visibility="hidden";
+
+    </script>
 </body>
+
 </html>
