@@ -1,0 +1,58 @@
+<!-- // DOM Manupilation -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 class="class1" id="heading">This is a Demo text</h1>
+    <h2 id="subheading">This is a Sub Heading</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic voluptatibus magnam dolore officia facere ad,
+        incidunt totam culpa vel velit, vero tenetur laboriosam eaque tempore praesentium sunt asperiores sed illum,
+        quam repudiandae voluptates eius recusandae minima. Voluptates doloribus reprehenderit iure possimus explicabo
+        saepe, consectetur harum eaque atque repellat magni nihil!</p>
+
+    <script>
+
+        // Selecting By id
+        //document.getElementById() -->
+
+        let heading = document.getElementById("heading");
+        console.dir(heading);
+
+        // Selecting By Class
+        let classSelect = document.getElementsByClassName("class1")
+        console.dir(classSelect);
+        console.log(classSelect);
+
+        //Selecting by tags
+        let parahs = getElementsByTagsName("p");
+        console.dir(parahs);
+
+        // <----------------------------------------------------->
+
+
+        //Query Selector
+        let firstElements = documents.querySelector("p");
+        console.dir(firstElements); // 1st Element
+
+        let allElements = document.querySelectorAll("p");
+        console.log(allElements); // All Elemets
+
+        //QuerySelector ma Class halnee vaye ''. sahit Lekhna Paroo
+        // QuerySelector ma ID halnee vaye # sahit Lekhna Paroo
+
+
+        // DOM Properties 
+        // 1>TagName 
+        
+
+    </script>
+</body>
+
+</html>
