@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            border: 2px solid red;
+            margin: 20px;
+            width: 100px;
+            height:50px;
+            text-align: center;
+            background-color: rgb(191, 255, 0);
+        }
+    </style>
+</head>
+<body>
+    <h2>Here is the Text</h2>
+    <div class="box">Box1</div>
+    <div class="box">Box2</div>
+    <div class="box">Box3</div>
+    
+    <script>
+    let h2 = document.querySelector("h2")
+    console.dir(h2.innerText)
+    h2.innerText = h2.innerText + " Anuz From Java Script"  
+
+    let box = document.querySelectorAll(".box");
+    i=0;
+    for(div of box){
+        div.innerText = 'new inner Value ' + i;
+        i++;
+    }
+    // box[0].innerText = 'This is a Box'
+    // box[1].innerText = 'This is also a Box'
+    // box[2].innerText = 'This is not a Box'
+
+    </script>
+</body>
+</html>
