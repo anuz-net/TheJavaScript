@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="myclock"></p>
+    <input type="button" onclick="clock()" value="show clock">
+    <script type = "text/javascript">
+        function clock(){
+            var now = new Date();
+            document.getElementById("myclock").innerHTML = now.toUTCString();
+            setTimeout(clock, 1000);
+            // setTimeout is used to call the clock function every 1000 milliseconds (1 second
+        }
+        </script>
+    
+</body>
+</html>
